@@ -1,2 +1,2 @@
-# pot-onprem-core
-Proof of Technology On-Prem Lab Files and Setup Scripts
+# pot-onprem-docs
+Proof of Technology Student Lab Guide and Instructor Information
