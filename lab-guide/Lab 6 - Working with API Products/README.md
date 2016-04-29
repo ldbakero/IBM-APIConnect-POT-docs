@@ -28,7 +28,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1. Return to the API list, and switch to the `Products` tab
 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/products.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/products.png)
 
 1. Click the link for the `inventory` product.
 	
@@ -50,7 +50,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 	
 	> Contact URL: `http://www.ibm.com`  
 	
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/think-infocontact.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/think-infocontact.png)
 
 1. Specify a License and Terms of Service:
 
@@ -60,17 +60,17 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 		
 	> Terms of Service: paste the contents of the `lab6/license.txt` file
 	  
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/think-licensetos.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/think-licensetos.png)
 	
 1. Modify the Visibility so that the `think` product is only visible to `Authenticated users`:
   
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/think-visibility.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/think-visibility.png)
 	
 1. Navigate to the APIs section. Click the `+` button to add all of our new APIs to this product.
 
 1. Check the checkboxes next to `financing`, `logistics` and `oauth`. 
 	 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/think-apis.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/think-apis.png)
 
 1. Click the `Apply` button.
 
@@ -82,7 +82,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 	
 	> Description: `Limited access to these APIs`
 	
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/think-silverplan.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/think-silverplan.png)
 
 1. Click the `+` button to create a new plan. Give it the following properties:
 
@@ -96,23 +96,23 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 	
 	> Approval: check `Require subscription approval`  
 	
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/think-goldplan.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/think-goldplan.png)
 
 1. Save your changes.
 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/save-icon.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/save-icon.png)
 
 ## 6.2 - Publishing the API Product
 
 1. Click the `Publish` icon.
 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/think-publish.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/think-publish.png)
 
 1. Select `Add and Manage Targets` from the menu.
 
 1. Select `Add a different target`.
 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/publish-adddifferent.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/publish-adddifferent.png)
 
 1. Provide connection information to sign into the IBM API Connect management server, then click the `Sign in` button:
 
@@ -122,15 +122,15 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 	
 	> Password: `Passw0rd!`  
 	
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/publish-target-signin.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/publish-target-signin.png)
 
 1. On the **Select an organization and catalog** screen, choose the `Sandbox` catalog and click the `Next` button.
 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/publish-sandbox-catalog.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/publish-sandbox-catalog.png)
 
 1. On the **Select an App** screen, choose the `Inventory` application and click the `Save` button.
 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/publish-inventory-app.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/publish-inventory-app.png)
 	
 	> ![][info]
 	> 
@@ -140,11 +140,11 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1. Click `Publish` button once more and select our target:
 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/publish-target.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/publish-target.png)
 
 1. Check the box to `Stage or Publish products`:
 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/publish-product.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/publish-product.png)
 
 	> ![][info]
 	> 
@@ -156,7 +156,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 1. Wait a moment while the Product is published, a `Success` message will appear letting you know the step is complete:
 
-	![](https://github.com/ibm-apic-pot/lab-guide/raw/master/img/lab6/publish-success.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/publish-success.png)
 
 1. Close the Firefox web browser.
 
@@ -195,6 +195,6 @@ In this lab, you learned:
 
 Proceed to [Lab 7 - Consumer Experience](../Lab%207%20-%20Consumer%20Experience)
 
-[important]: https://github.com/ibm-apic-pot/lab-guide/raw/master/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apic-pot/lab-guide/raw/master/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apic-pot/lab-guide/raw/master/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/troubleshooting.png "Troubleshooting"
