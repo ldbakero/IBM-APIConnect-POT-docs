@@ -300,10 +300,6 @@ An API Assembly provides collection of policies which are enforced and executed 
 	> 
 	> The `$(request.path)` variable will automatically remove the organization and catalog components of the full API Connect request path. Additionally, the leading slash `/` is already included in the variable value.
 
-1. Scroll down to the bottom of the editor screen. Set the `Response object variable` to `message`.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/invoke_rsp_var.png)
-
 1. Click on the `X` to close the invoke policy editor menu.
 
 1. Save your changes.
