@@ -12,11 +12,12 @@ In the following lab, you will learn:
 + How to add catalog-specific properties to an API.
 + How to assemble an API implementation using the activity-log, set-variable and invoke policies
 
-```text
+<!---
 FIXME: Because of a limitation in the proxy policy not being able to pass
 the Host header, we'll need to use the Invoke policy. One downfall though
 of using invoke is that the filter parameters don't work.
-```
+-->
+
 
 ---
 # Lab 4 - Case Study Used in this Tutorial
@@ -67,11 +68,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 1. Navigate to the `Host` section of the API. Remove `$(catalog.host)` from the Host field, as we want to keep this blank.
 
-	> ![][troubleshooting]
-	> 
-	> The host field will show red, indicating it's a required field. You may ignore this warning.
-	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/no-host.png)
+
 
 1. Navigate to the `OAuth 2` section.
 
@@ -133,11 +130,6 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 	The inventory API will open in the API Editor, where we can make the necessary configuration changes. Over the next several steps you will set this API up to use the OAuth provider you just created.  
 	
-1. A nice feature of the API Designer is the ability to automatically validate the API definition. Notice that the definition that was generated for us includes a warning.
-
-	Click on the warning symbol to view the warning message, then click on the `show me` link to navigate to the section of the design causing the warning.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/swagger_warning.png)
 
 1. Click on the `trashcan` icon for the `x-any` Definition to remove it. Confirm the removal by clicking the `OK` button in the prompt.
 
