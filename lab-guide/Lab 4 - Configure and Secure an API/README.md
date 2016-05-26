@@ -298,6 +298,20 @@ An API Assembly provides collection of policies which are enforced and executed 
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/save-icon.png)
 
+1. Close the Firefox browser by clicking the `x` on the tab or browser window.
+
+1. Return to your `Terminal Emulator` session.
+
+1. Even though we closed the browser, the API Designer application itself is still running.
+
+	Hold the `control` key and press the `c` key to end the API Designer session:
+	
+	```bash
+	control+c
+	```
+	
+	This will return you to the command line prompt.
+
 # Lab 4 - Validation
 
 Using both the CLI and the API Designer, a lot of files have been created and updated. Before moving on to the next lab, a simple script has been provided for you which will validate your source files against those of a completed lab. These next steps will help ensure that easily made typing errors do not cause problems down the line.
