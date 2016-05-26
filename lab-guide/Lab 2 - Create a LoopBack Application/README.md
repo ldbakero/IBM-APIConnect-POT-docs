@@ -300,7 +300,7 @@ To confirm that the API has been correctly mapped and can interface with the MyS
 
 1. Once complete, return to the API explorer and click on the `Call operation` button again.
 
-1. Scroll down to see the REQUEST and RESPONSE headers 
+1. Scroll down to see the `Request` and `Response` headers. 
 
 	```text
 	Request
@@ -347,7 +347,7 @@ To confirm that the API has been correctly mapped and can interface with the MyS
 	}
 	```
 
-1. Return to the `Run` screen and click the `Stop` button to stop the application and MicroGateway.
+1. Return to the `Run` screen and click the `Stop` button to stop the Inventory application and MicroGateway.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/stop-application.png)
 
