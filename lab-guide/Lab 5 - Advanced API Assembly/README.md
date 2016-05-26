@@ -466,7 +466,7 @@ This operation will end up invoking two separate back-end services to acquire sh
   
 	> Title: `map_responses`
 	  
-	> Description: `Map responses from invoke_xyz and invoke_cek to output'
+	> Description: `Map responses from invoke_xyz and invoke_cek to output`
 	
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab5/logistics-map-properties.png)
 
@@ -573,6 +573,20 @@ This operation will call out to the Google Geocode API to obtain location inform
 1. Save your changes.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab5/save-icon.png)
+
+1. Close the Firefox browser by clicking the `x` on the tab or browser window.
+
+1. Return to your `Terminal Emulator` session.
+
+1. Even though we closed the browser, the API Designer application itself is still running.
+
+	Hold the `control` key and press the `c` key to end the API Designer session:
+	
+	```bash
+	control+c
+	```
+	
+	This will return you to the command line prompt.
 
 # Lab 5 - Validation
 

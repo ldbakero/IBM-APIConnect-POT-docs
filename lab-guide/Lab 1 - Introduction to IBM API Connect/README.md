@@ -11,11 +11,11 @@ In the following lab, you will learn:
 + How to publish an API to the Developer Portal
 
 ---
-# Lab 1 - Case Study used in this tutorial
+# Lab 1 - Case Study Used in This Tutorial
 In this tutorial, you will create the default Hello World LoopBack application. We will look at the created artifacts to get a better understanding of what is created for you. The hello-world application is a simple RESTful service that holds a set of "notes" in memory. In this lab we may be creating a new RESTful service and API, but in future labs you'll be creating APIs with existing services.
 
 ---
-# Lab 1	- Before you begin
+# Lab 1	- Before You Begin
 For this lab, you will be using a VMWare image running Xubuntu that is pre-installed with the API Connect Developer Toolkit. Ensure the image is up and running before starting. If you have any questions, please consult your lab instructor.
 
 ---

@@ -12,11 +12,12 @@ In the following lab, you will learn:
 + How to add catalog-specific properties to an API.
 + How to assemble an API implementation using the activity-log, set-variable and invoke policies
 
-```text
+<!---
 FIXME: Because of a limitation in the proxy policy not being able to pass
 the Host header, we'll need to use the Invoke policy. One downfall though
 of using invoke is that the filter parameters don't work.
-```
+-->
+
 
 ---
 # Lab 4 - Case Study Used in this Tutorial
@@ -67,11 +68,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 1. Navigate to the `Host` section of the API. Remove `$(catalog.host)` from the Host field, as we want to keep this blank.
 
-	> ![][troubleshooting]
-	> 
-	> The host field will show red, indicating it's a required field. You may ignore this warning.
-	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/no-host.png)
+
 
 1. Navigate to the `OAuth 2` section.
 
@@ -133,11 +130,6 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 	The inventory API will open in the API Editor, where we can make the necessary configuration changes. Over the next several steps you will set this API up to use the OAuth provider you just created.  
 	
-1. A nice feature of the API Designer is the ability to automatically validate the API definition. Notice that the definition that was generated for us includes a warning.
-
-	Click on the warning symbol to view the warning message, then click on the `show me` link to navigate to the section of the design causing the warning.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/swagger_warning.png)
 
 1. Click on the `trashcan` icon for the `x-any` Definition to remove it. Confirm the removal by clicking the `OK` button in the prompt.
 
@@ -167,7 +159,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	> Flow: `Password`
 	
-	> Token URL: `https://api.think.ibm/demo/sb/oauth20/token`
+	> Token URL: `https://api.think.ibm/sales/sb/oauth20/token`
 
 1. Click the `+` icon in the **Scopes** section to create a new scope. Set the following properties:
 
@@ -300,15 +292,25 @@ An API Assembly provides collection of policies which are enforced and executed 
 	> 
 	> The `$(request.path)` variable will automatically remove the organization and catalog components of the full API Connect request path. Additionally, the leading slash `/` is already included in the variable value.
 
-1. Scroll down to the bottom of the editor screen. Set the `Response object variable` to `message`.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/invoke_rsp_var.png)
-
 1. Click on the `X` to close the invoke policy editor menu.
 
 1. Save your changes.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/save-icon.png)
+
+1. Close the Firefox browser by clicking the `x` on the tab or browser window.
+
+1. Return to your `Terminal Emulator` session.
+
+1. Even though we closed the browser, the API Designer application itself is still running.
+
+	Hold the `control` key and press the `c` key to end the API Designer session:
+	
+	```bash
+	control+c
+	```
+	
+	This will return you to the command line prompt.
 
 # Lab 4 - Validation
 

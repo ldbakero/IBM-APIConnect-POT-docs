@@ -164,7 +164,7 @@ In this section, you will publish the `inventory` application to a Liberty runti
 
 	> Display Name: `Inventory`
 	
-	> Name: `Inventory`
+	> Name: `inventory`
 	
 	> Collective: `AppSvr`
 	
@@ -182,7 +182,7 @@ In this section, you will publish the `inventory` application to a Liberty runti
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/app-config-link-copy.png)
 
-1. Return to the Firefox browser, click on the user profile icon and select `Log Out`.
+1. Click on the user profile icon and select `Log Out`.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/api-mgr-signout.png)
 
@@ -199,12 +199,8 @@ In this section, you will publish the `inventory` application to a Liberty runti
 1. Use the terminal menu bar to select `Edit > Paste` to paste the contents of your clipbard. If you did not copy the command earlier, you can type it here:
 
 	```bash
-	apic config:set app=apic-app://mgr.think.ibm/orgs/sales/apps/Inventory
+	apic config:set app=apic-app://mgr.think.ibm/orgs/sales/apps/inventory
 	```
-
-	> ![][important]
-	> 
-	> The command above is **case sensitive**. If you registered your application as `inventory` with a lower-case `i`, make sure the command above reflects that accurately.
 
 1. Continue setting up the development environment by logging into the API Connect management server:
 
