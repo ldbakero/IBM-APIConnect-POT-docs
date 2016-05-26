@@ -1,6 +1,6 @@
 # Discovering the Value of IBM API Connect
 
-##### Firmware Version:  5.0.0.0
+##### Firmware Version:  5.0.0.1
 
 ![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/api-connect.png)
 
