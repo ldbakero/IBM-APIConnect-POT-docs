@@ -182,7 +182,7 @@ In this section, you will publish the `inventory` application to a Liberty runti
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/app-config-link-copy.png)
 
-1. Return to the Firefox browser, click on the user profile icon and select `Log Out`.
+1. Click on the user profile icon and select `Log Out`.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/api-mgr-signout.png)
 

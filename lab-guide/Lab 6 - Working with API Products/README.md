@@ -26,7 +26,14 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 ## 6.1 - Creating an API Product
 
-1. Return to the API list, and switch to the `Products` tab
+1. If the API Designer screen has not already been launched, open a terminal and start the designer by issuing the following commands:
+
+	```bash
+	cd ~/ThinkIBM/inventory
+	apic edit
+	```
+
+1. Switch to the `Products` tab
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/products.png)
 
@@ -68,7 +75,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 	
 1. Navigate to the APIs section. Click the `+` button to add all of our new APIs to this product.
 
-1. Check the checkboxes next to `financing`, `logistics` and `oauth`. 
+1. Check the checkboxes next to `financing`, `logistics` and `oauth`, ensuring that `inventory` is left selected.
 	 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab6/think-apis.png)
 
