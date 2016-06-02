@@ -215,7 +215,31 @@ Alternatively, if you'd rather not login to bluemix:
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/stop-app.png)
 
-# 1.4	- Publishing the API to the Developer Portal
+# 1.4	- Prepare the API for Publishing
+
+In the previous steps, you started the new application along with a MicroGateway locally on your developer work station. Our API Connect infrastructure uses DataPower as the gateway though, and not the MicroGateway. In order to publish the API definition to the API Connect servers, we'll need to change the Gateway Policies to utilize DataPower.
+
+1. Click on the `APIs` option from the menu bar.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/apis-menu.png)
+
+1. Click on the `hello-world` API from the list.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/hello-world-api.png)
+
+1. Click on the `Assemble` option from the API menu bar.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/assemble-menu.png)
+
+1. Click on the filter arrow to display the option to select the set of gateway policies and choose the option for `DataPower Gateway Policies`.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/select-dp-policies.png)
+
+1. Click on the Save icon to save the API.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/save-api.png)
+
+# 1.5	- Publishing the API to the Developer Portal
 
 1. Click the `Publish` icon.
 
@@ -263,7 +287,7 @@ Alternatively, if you'd rather not login to bluemix:
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/publish-success.png)
 
-# 1.5	- Browsing the API in the Developer Portal
+# 1.6	- Browsing the API in the Developer Portal
 
 1. Open a new tab in the Firefox web browser by clicking on the new tab `+` button.
 
