@@ -414,7 +414,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 	> Title: `invoke_xyz`
 	  
-	> Invoke URL: `$(shipping_svc_url)?company=xyz&from_zip=90210&to_zip={zip}`
+	> URL: `$(shipping_svc_url)?company=xyz&from_zip=90210&to_zip={zip}`
 	  
 	> Response object variable (scroll to the bottom): `xyz_response`
 	
@@ -434,7 +434,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 	> Title: `invoke_cek`
 	  
-	> Invoke URL: `$(shipping_svc_url)?company=cek&from_zip=90210&to_zip={zip}`
+	> URL: `$(shipping_svc_url)?company=cek&from_zip=90210&to_zip={zip}`
 	
 	> Response object variable: `cek_response`
 	
@@ -526,7 +526,7 @@ This operation will call out to the Google Geocode API to obtain location inform
 
 	> Title: `invoke_google_geolocate`
 	  
-	> Invoke URL: `https://maps.googleapis.com/maps/api/geocode/json?&address={zip}`
+	> URL: `https://maps.googleapis.com/maps/api/geocode/json?&address={zip}`
 	  
 	> Response object variable (scroll to the bottom): `google_geocode_response`  
 	
