@@ -44,11 +44,9 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 	
 	> Name: `financing`
 	
-	> Base Path: `/financing`
-	
 	> Version: `1.0.0`
 	
-	> Description: `Operations for calculating financing payments`
+	> Add to an existing product: `inventory 1.0.0`
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_api_info.png)
 
@@ -63,12 +61,20 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 	> The host field will show a red line indicating that the field is required. You may ignore this message.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_no_host.png)
+	
+	```
+	NOTES: LETS SEE IF THIS IS NECESSARY
+	```
 
-1. Scroll down to the `Schemes` section, or select it from the API editor menu. Enable the `https` scheme.
+1. Click on `Base Path` menu option and set the base path to `/financing`.
+
+	![]()
+
+1. Click on the `Schemes` menu option, or select it from the API editor menu. Enable the `https` scheme.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_schemes.png)
 
-1. Below the Schemes section are the `Consumes` and `Produces` sections. For each of these, choose `application/json`.
+1. Click on the the `Consumes` menu option. For both "Consumes" and "Produces", choose `application/json`.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_consumes_produces.png)
 
@@ -99,10 +105,6 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 	+ Recall that our Base Path for this API is `/financing`. This new path will be appended to the base, creating a final path of `/financing/calculate`.
 
 1. Click on the `GET` operation to expand the configuration options for the resource.
-
-1. Each operation needs an Operation ID. Set the Operation ID to: `get.financingAmount`
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_operation_id.png)
 
 1. Next, we have the option of adding request parameters to the operation. This defines the input to the API request. Since this is a GET request, we'll add the required request parameters to the query component of the URI.
 
@@ -246,7 +248,9 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1. In the interest of time, and to avoid typing errors, a sample schema file has been provided for you.
 
-	Open the `Sublime Text` application from the system task bar, or using the favorites menu.
+	Select the `Atom` application from the system task bar if it was left open, or open it using the favorites menu.
+
+1. Make sure you're in the `Atom` instance that is opened to browse the `lab-files` folder. If you need to open the `lab-files` folder, use the file menu and select `File -> Open Folder...` and choose `student -> lab-files`.
 	
 1. Use the file tree menu to open the `lab5/schema_financingSoap.yaml` file:
 
@@ -312,10 +316,6 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1. Click the `Done` button in the output editor window to return to the map editor.
 
-1. Click on the curly braces `{}` for the `financingRequest: {}` element to expand the view and see the SOAP input elements.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_expand_operations.png)
-
 1. For each of the `Input` query parameters, map them to their respective SOAP `Output` elements.
 
 	To map from an input field to an output field, click the circle next to the *source* element once, then click the circle next to the *target* element. A line will be drawn between the two, indicating a mapping from the source to the target.
@@ -326,7 +326,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1. Click the `invoke` policy to open its editor.
 
-1. Set the `Invoke URL` to: `https://services.think.ibm:1443/financing`.
+1. Set the `Invoke URL` to: `https://services.think.ibm:1443/financing/calculate`.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_invoke_url.png)
 
@@ -366,41 +366,19 @@ Rather than require you to build the entire API from scratch again, you will see
 
 1. Click on the `All APIs` link to return to the main API Designer screen.
 
-1. Click on the `+ Add` button to add a new API. Specify the following values:
+1. Click on the `+ Add` button to import a new `OpenAPI (Swagger 2.0)`.
 
-	> Title: `logistics`
-	  
-	> Name: `logistics`
-	  
-	> Base Path: `/logistics`
-	  
-	> Version: `1.0.0`
-	  
-	> Description: `Provides logistics for sales`
-	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/logistics-create.png)
-	
-1. Keep the default `Don't add to a product` option selected and click the `Add` button.
+1. Click on the `Select File` button to open the file browser. Navigate to the `~/home/student/lab-files/lab5` folder and choose the `api_logistics.yaml` file.
 
-1. Switch to the `Source` tab and look at the API Definition. Any edits you make directly to the source will be immediately visible on the `Design` tab.  
+	![][]
 
-1. From the `Sublime Text` editor, open the `lab5/api_logistics.yaml` file.
+1. Click the `import` button to import the `logistics` API definition template.
 
-	**Select** the full contents of the file and **copy** the contents to the clipboard.
+	![][]
 
-1. Return to the browser, select the contents of the `Source` tab and delete the contents.
+1. Click on the `logistics 1.0.0` API from the list to browse the API definition.
 
-1. Paste the contents of your clipboard to update the API Definition.
-  
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/logistics-yaml.png)
-
-1. Switch back to the `Design` view and note the changes that have been imported, in particular:
-
-	* Properties
-	* Paths
-	* Definitions
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/logistics-updated-definition.png)
+	![][]
 
 ### 5.2.2 - Create the Logistics API Assembly
 
@@ -416,9 +394,9 @@ Rather than require you to build the entire API from scratch again, you will see
 
 1. Click `search operations...` to bring up the drop-down list of available operations.
 
-1. Select the `shipping.calc` operation.
+1. Select the `get /shipping` operation.
 
-1. Click the `+ Case` button to add a second case for the `get.stores` operation.  
+1. Click the `+ Case` button to add a second case for the `get /stores` operation.  
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/logistics-operationswitch-cases.png)
 
@@ -428,11 +406,11 @@ Rather than require you to build the entire API from scratch again, you will see
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/logistics-twopipelines.png)
 
-#### 5.2.2.1 - Configure the `shipping.calc` Case:
+#### 5.2.2.1 - Configure the `get /shipping` Case:
 
 This operation will end up invoking two separate back-end services to acquire shipping rates for the respective companies, then utilize a map action to combine the two separate responses back into a single, consolidated message for our consumers.
 
-1. Add an invoke policy to the `shipping.calc` case with the following properties:
+1. Add an invoke policy to the `get /shipping` case with the following properties:
 
 	> Title: `invoke_xyz`
 	  
@@ -448,7 +426,11 @@ This operation will end up invoking two separate back-end services to acquire sh
 	>
 	> The `{zip}` parameter provided here is a reference to the `zip` parameter defined as input to the operation. The `{zip}` portion of the URL will get replaced by the actual zip code provided by then API consumers.
 
-1. Add a second invoke policy to the `shipping.calc` case with the following properties:
+1. Hover over the `invoke_xyz` policy and click on the `clone` button to add another invoke action:
+
+	![][]
+
+1. Edit the new invoke policy with the following properties:
 
 	> Title: `invoke_cek`
 	  
@@ -482,7 +464,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 1. After you select `Inline schema`, you will be prompted to "Provide a schema".
 
-	Use the `Sublime Text` editor to open the `lab5/schema_shippingSvc.yaml` file.
+	Use the `Atom` editor to open the `/home/student/lab-files/lab5/schema_shippingSvc.yaml` file.
 	
 	Copy the contents to your clipboard and paste them into the schema editor window.
 	  
@@ -536,11 +518,11 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/save-icon.png)
 
-#### 5.2.2.2 - Configure the `get.stores` Case:
+#### 5.2.2.2 - Configure the `get /stores` Case:
 
 This operation will call out to the Google Geocode API to obtain location information about the provided zip code, then utilize a simple gatewayscript to modify the response and provide a formatted Google Maps link.
 
-1. Add an invoke policy to the `get.stores` case with the following properties:
+1. Add an invoke policy to the `get /stores` case with the following properties:
 
 	> Title: `invoke_google_geolocate`
 	  
@@ -556,7 +538,7 @@ This operation will call out to the Google Geocode API to obtain location inform
   
 	> Title: `gws-format-maps-link`
 	  
-	> Paste the contents of `lab5/gws_formatMapsLink.js` into the code section of the policy.
+	> Paste the contents of `/home/student/lab-files/lab5/gws_formatMapsLink.js` into the code section of the policy.
 	
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/logistics-gws.png)
 	
