@@ -57,10 +57,10 @@ LoopBack consists of:
 1. From the command line terminal, type the following command to create the `inventory` application:
 
 	```bash
-	apic loopback inventory
+	apic loopback
 	```
 
-1. You will be asked to name your application.
+1. You will be asked to name your application. Call it `inventory` and press the `Enter` or `Return` key.
 
 	```
 	     _-----_
@@ -73,10 +73,8 @@ LoopBack consists of:
 	   __'.___.'__   
 	 ´   `  |° ´ Y `
 	 
-	? What's the name of your application? (inventory) 
+	? What's the name of your application? (ThinkIBM) inventory
 	```
-
-	Since you already supplied the name of the application as part of the previous step you can keep the default by pressing the `Enter` or `Return` key.
 
 1. Next you will be asked to supply the name of the directory where the application will be created.
 
@@ -126,6 +124,7 @@ There are two parts to this. First is the definition of how to connect to the ba
 	? Enter the data-source name:  mysql-connection
 	? Select the connector for mysql-connection:
 		> MySQL (supported by StrongLoop)
+	? Connection String url to override other settings (eg: mysql://user:pass@host/db): <leave blank>
 	? host:  mysql.think.ibm
 	? port:  3306
 	? user:  student
@@ -259,19 +258,17 @@ The item table in the MySQL database has 6 columns that will need to mapped as w
 
 To confirm that the API has been correctly mapped and can interface with the MySQL datasource, you will run the server and test the API.
 
-1. Click the `Run` button to open the Run page.
+1. Click the `Run` button to start the `inventory` LoopBack application
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-run.png)
-
-1. Click the `Start` button to start the `inventory` LoopBack application. In addition to the application, a MicroGateway will also be started.
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/run.png)
 
 1. Wait a moment while the servers are started. Proceed to the next step when you see the following:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-running.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/app-running.png)
 
 1. Click the `Explore` button to review your APIs. 
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-explore.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/explore.png)
 
 1. On the left side of the page, notice the list of paths for the `inventory` API. These are the paths and operations that were automatically created for you by the LoopBack framework simply by adding the `item` data model. The operations allow users the ability to create, update, delete and query the data model from the connected (MySQL) data source.
 
@@ -347,10 +344,6 @@ To confirm that the API has been correctly mapped and can interface with the MyS
 	}
 	```
 
-1. Return to the `Run` screen and click the `Stop` button to stop the Inventory application and MicroGateway.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/stop-application.png)
-
 ## 2.8 - Create a MongoDB Data Source
 
 So far, we have created a LoopBack application which provides APIs around our inventory items stored in a MySQL database.
@@ -372,6 +365,12 @@ First you must create a data source entry for the MongoDB.
 	```
 	
 	This will return you to the command line prompt.
+	
+1. Also, our `inventory` LoopBack app is still running. In the terminal, type:
+
+	```bash
+	apic stop
+	```
 
 1. Type the following command to create a data source for MongoDB:
 
@@ -387,6 +386,7 @@ First you must create a data source entry for the MongoDB.
 	? Enter the data-source name:  mongodb-connection
 	? Select the connector for mongodb-connection:
 		> MongoDB (supported by StrongLoop)
+	? Connection String url to override other settings: <leave blank>
 	? host: mongo.think.ibm
 	? port: 27017
 	? user: 
@@ -433,7 +433,6 @@ In the earlier steps, you used the API Designer User Experience to create a data
 	? Select models base class:
 		> PersistedModel
 	? Expose review via the REST API? (Y/n):  N
-	? Custom plural form (used to build REST URL):
 	? Common model or server only?
 		> common
 	```
