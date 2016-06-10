@@ -46,21 +46,17 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 1. Click the `+ Add` button and select `OAuth 2.0 Provider API` from the menu.
 
-1. Specify the following properties and click the `Next` button to continue.
+1. Specify the following properties and click the `Add` button to continue.
 
 	> Title: `oauth`
 	
 	> Name: `oauth`
 	
-	> Base Path: `/oauth20`
-	
-	> Description: `API for Obtaining Access Tokens`
+	> Add to an existing product: `inventory 1.0.0`
 	
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/newoauthprops-1of2.png)
 
-1. Accept the default radio button selection labeled `Don't add to a product` and click the `Add` button.
-
-	The API Editor will launch. If this is your first time using the API Editor, you will see an informational message. When you are ready to proceed, click the `Got it!` button to dismiss the message.  
+1. The API Editor will launch. If this is your first time using the API Editor, you will see an informational message. When you are ready to proceed, click the `Got it!` button to dismiss the message.  
 	
 	The API Editor opens to the newly created `oauth` API. The left hand side of the view provides shortcuts to various elements within the API definition: Info, Host, Base Path, etc. By default, the API Editor opens to the `Design` view, which provides a user-friendly way to view and edit your APIs. You may notice additional tabs labeled `Source` and `Assemble`. We will work with these views as well.
 	
@@ -68,7 +64,9 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 1. Navigate to the `Host` section of the API. Remove `$(catalog.host)` from the Host field, as we want to keep this blank.
 
-
+	```
+	NOTE:  LETS SEE IF THIS IS REQUIRED
+	```
 
 1. Navigate to the `OAuth 2` section.
 
@@ -98,9 +96,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	> Authentication URL: `https://services.think.ibm:1443/auth`
 	
-	> TLS Profile: **remove** `tls-profile-4` and leave blank
-	
-	> Deselect the `Enable revocation URL` option
+	> Turn off the `Enable revocation` option
 	
 	When complete, your settings should look like this:
 	
@@ -109,14 +105,6 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	> ![][important]
 	> 
 	> The scope defined here must be identical to the scope that we define later when telling the `inventory` API to use this OAuth config. A common mistake is around case sensitivity. To avoid running into an error later, make sure that your scope is set to all **lowercase**.
-
-1. Navigate to the `Paths` section. Notice that the generated paths begin with `/oauth2`. However, since we have configured our base path to be `/oauth20`, we will shorten the authorization and token paths.
-
-1. Change the `/oauth2/authorize` path to `/authorize`  
-
-1. Change the `/oauth2/token` path to `/token`
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/edit-oauthpaths.png)
 
 1. Click the `Save` icon in the top right corner of the editor to save your changes.
 
@@ -140,6 +128,10 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 1. Navigate to the `Host` section of the API. **Remove** the `$(catalog.host)` value.
 
 	As with the OAuth API Provider we just created, we want this value to remain empty.
+	
+	```
+	NOTE: LETS SEE IF THIS IS NECESSARY
+	```
 
 1. Navigate to the `Security Definitions` section.
 
@@ -225,10 +217,6 @@ For example, we will configure the `inventory` API to invoke a backend service. 
 	
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/inventory_appid_property.png)
 
-	> ![][troubleshooting]
-	> 
-	> The UI may inadvertently add another value after you paste in the app-id. If this occurs, click the trashcan icon to remove the unwanted entry.
-
 1. Save your changes.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/save-icon.png)
@@ -241,8 +229,6 @@ An API Assembly provides collection of policies which are enforced and executed 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/inv-assembly-start.png)
 
 1. Modify your assembly to use DataPower Gateway policies.
-
-	Expand the `Filter` menu by clicking the menu icon (to the right of the `Filter` label).
 	
 	Select the `DataPower Gateway policies` radio button.
 	
