@@ -167,19 +167,19 @@ In this section, you will define the `item` data model for our `inventory` API a
 
 1. Click the `Models` tab.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-model-design-page.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-model-design-page.png)
 	
 1. Click the `+ Add` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-model-design-page-add-button.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-model-design-page-add-button.png)
 	
 1. In the New LoopBack Model dialog, enter `item` as the model name, then click the `New` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-model-design-page-new-model.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-model-design-page-new-model.png)
 
 1. When the Model edit page for the item model displays, select the `mysql-connection` Data Source:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-model-datasource.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-model-datasource.png)
 
 ## 2.6 - Create Properties for the `item` Model
 
@@ -251,7 +251,7 @@ The item table in the MySQL database has 6 columns that will need to mapped as w
 
 1. Scroll to the top of the page and click the `Save` button to save the data model.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-model-design-page-model-properties-save.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-model-design-page-model-properties-save.png)
 
 1. Click the `All Models` link to return to the main API Designer page.
 
@@ -261,23 +261,23 @@ To confirm that the API has been correctly mapped and can interface with the MyS
 
 1. Click the `Run` button to open the Run page.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-run.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-run.png)
 
 1. Click the `Start` button to start the `inventory` LoopBack application. In addition to the application, a MicroGateway will also be started.
 
 1. Wait a moment while the servers are started. Proceed to the next step when you see the following:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-running.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-running.png)
 
 1. Click the `Explore` button to review your APIs. 
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-explore.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-explore.png)
 
 1. On the left side of the page, notice the list of paths for the `inventory` API. These are the paths and operations that were automatically created for you by the LoopBack framework simply by adding the `item` data model. The operations allow users the ability to create, update, delete and query the data model from the connected (MySQL) data source.
 
 1. Click the `GET /items` operation.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-explore-page-get-items-api.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-explore-page-get-items-api.png)
 
 1. By clicking the `GET /items` operation, your screen will auto-focus to the correct location in the window. In the center pane you will see a summary of the operation, as well as optional parameters and responses.
 
@@ -287,7 +287,7 @@ To confirm that the API has been correctly mapped and can interface with the MyS
 
 1. Scroll down slowly to locate the `Call operation` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/api-designer-explore-page-call-operation.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/api-designer-explore-page-call-operation.png)
 
 1. Click the `Call operation` button to invoke the API.
 
@@ -296,7 +296,7 @@ To confirm that the API has been correctly mapped and can interface with the MyS
 	> 
 	> The first time you invoke the API, you may receive an error. The error occurs becuase the browser does not trust the self-signed certificate from the MicroGateway. To resolve the error, click on the link in the response window and accept the certificate warning.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/cert-error.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/cert-error.png)
 
 1. Once complete, return to the API explorer and click on the `Call operation` button again.
 
@@ -349,7 +349,7 @@ To confirm that the API has been correctly mapped and can interface with the MyS
 
 1. Return to the `Run` screen and click the `Stop` button to stop the Inventory application and MicroGateway.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/stop-application.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/stop-application.png)
 
 ## 2.8 - Create a MongoDB Data Source
 
@@ -537,13 +537,13 @@ To verify that the relationship has been created, you will open the API Connect 
 
 1. Click on the `inventory` link from the APIs tab.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/inventory-link.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/inventory-link.png)
 
 1. Scroll down to the `Paths` section of the API definition.
 
 	Notice how three new API paths have been created which allow access to item revew data:
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/new-paths.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/new-paths.png)
 
 1. Click the `x` button on the Firefox tab or window to close the browser.
 
@@ -571,7 +571,7 @@ Using both the CLI and the API Designer, a lot of files have been created and up
 	
 1. The script will execute a series `diff` commands against specific files in your project folder (`~/ThinkIBM/inventory`)
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab2/validate-lab-2.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab2/validate-lab-2.png)
 	
 1. If your output looks the same as the image above, then everything matches up and you may continue to lab 3. However, if a discrepency was found with one of the files, we can look a little close to see if it is something that will cause a problem.
 
@@ -626,7 +626,7 @@ Lab 3 will build on what you have already created to enable processing hooks and
 
 Proceed to [Lab 3 - Customize and Deploy an Application](../Lab%203%20-%20Customize%20and%20Deploy%20an%20Application)
 
-[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/troubleshooting.png "Troubleshooting"
 

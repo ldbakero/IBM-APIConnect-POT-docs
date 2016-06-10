@@ -25,7 +25,7 @@ For this lab, you will be using a VMWare image running Xubuntu that is pre-insta
 
 1. The Xubuntu host image may require a quick patch to update some support scripts. To run the update script, launch the terminal emulator application:
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/open-terminal.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/open-terminal.png)
 
 1. In the terminal, type:
 
@@ -125,19 +125,19 @@ Alternatively, if you'd rather not login to bluemix:
 
 1. To test our hello-world services, click on the `run` button to open the application launcher.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/run.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/run.png)
 	
 1. Next, click on the `start` button to launch the `hello-world` application.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/start.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/start.png)
 	
 1. Once start completes, you should see a screen similar to this:
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/app-running.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/app-running.png)
 	
 1. Notice that once the application is up and running, stop and restart buttons will appear on the right side of the screen:
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/stop-restart.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/stop-restart.png)
 	
 	At this point we're ready to Explore and test our services.
 
@@ -149,11 +149,11 @@ Alternatively, if you'd rather not login to bluemix:
 
 1. Click the `Explore` button to switch to the API Explorer view.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/explore.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/explore.png)
 	
 	You will see all the exposed service paths displayed.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/exploreScreen.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/exploreScreen.png)
 
 1. Now we're going to test the services using the GUI presented on the explore screen. You'll notice that on the left several REST services are defined for us. In particular, take a look `POST /notes` and `GET /notes`.
 
@@ -165,9 +165,9 @@ Alternatively, if you'd rather not login to bluemix:
 
 1. Press the `Generate` link to generate some sample data.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/generate-data.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/generate-data.png)
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/generate.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/generate.png)
 	
 	Your data will look different, but you're ready to test the service.
 	
@@ -175,19 +175,19 @@ Alternatively, if you'd rather not login to bluemix:
 	
 	In the results, you should see a `Code: 200 OK` which indicates that a new `note` was created. If you received a different response, see the troubleshooting steps below.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/POST-results.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/POST-results.png)
 	
 	> ![][troubleshooting]
 	>
 	> You may see an error displayed that mentions a CORS issue. This has to do with certificates in your browser. Go ahead an click the given link to rectify this, accept any certificate, close the opened tab, and press the `Call operation` button again.  Additionally, be sure not to skip step 5, as doing a `POST` operation without generating payload will cause an error.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/CORS-support-error.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/CORS-support-error.png)
 	
 	> ![][troubleshooting]
   >
   > If you see a 500 error like the one below, make sure you press the `Generate` button before you press the `Call operation` button again. Otherwise, you're trying to create a duplicate note.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/duplicateRecordError.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/duplicateRecordError.png)
 
 1. Once you have created one note, go ahead and create another one or two.
 
@@ -197,11 +197,11 @@ Alternatively, if you'd rather not login to bluemix:
 	
 1. Finally, let's test the `GET /notes` service. We should have two, three, or more notes created at this point. In the left hand column click the `GET /notes` link.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/get-notes.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/get-notes.png)
 
 1. Scroll down to the `Call operation` button and press it. Then scroll down to the results.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/GET-results.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/GET-results.png)
 		
 	You should see all the notes that you generated in the result set.
 		
@@ -213,7 +213,7 @@ Alternatively, if you'd rather not login to bluemix:
 
 1. Click on the `Stop` button to stop the application.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/stop-app.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/stop-app.png)
 
 # 1.4	- Prepare the API for Publishing
 
@@ -221,35 +221,35 @@ In the previous steps, you started the new application along with a MicroGateway
 
 1. Click on the `APIs` option from the menu bar.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/apis-menu.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/apis-menu.png)
 
 1. Click on the `hello-world` API from the list.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/hello-world-api.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/hello-world-api.png)
 
 1. Click on the `Assemble` option from the API menu bar.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/assemble-menu.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/assemble-menu.png)
 
 1. Click on the filter arrow to display the option to select the set of gateway policies and choose the option for `DataPower Gateway Policies`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/select-dp-policies.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/select-dp-policies.png)
 
 1. Click on the Save icon to save the API.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/save-api.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/save-api.png)
 
 # 1.5	- Publishing the API to the Developer Portal
 
 1. Click the `Publish` icon.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/publishButton.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/publishButton.png)
 
 1. Select `Add and Manage Targets` from the menu.
 
 1. Select `Add a different target`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/add-target.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/add-target.png)
 
 1. Provide connection information to sign into the IBM API Connect management server, then click the `Sign in` button:
 
@@ -259,11 +259,11 @@ In the previous steps, you started the new application along with a MicroGateway
 	
 	> Password: `Passw0rd!`  
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/publish-target-signin.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/publish-target-signin.png)
 
 1. On the "Select an organization and catalog" screen, choose the `Sandbox` catalog and click the `Next` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/publish-sandbox-catalog.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/publish-sandbox-catalog.png)
 
 1. On the "Select an App" screen, choose `None` application and click the `Save` button.
 
@@ -271,7 +271,7 @@ In the previous steps, you started the new application along with a MicroGateway
 
 1. Click `Publish` button once more and select our target, indicated by the grey highlighting:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/publish-target.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/publish-target.png)
 
 1. Here we have the opportunity to select what gets published. If we were working on multiple API products as part of this project, we could choose specific ones to publish.
 	
@@ -279,37 +279,37 @@ In the previous steps, you started the new application along with a MicroGateway
 	
 	Click the `Publish` button:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/publish-api.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/publish-api.png)
 
 1. Click the `Publish` button to make the API available in the Developer Portal.
 
 1. Wait a moment while the Product is published, a Success message will appear letting you know the step is complete:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/publish-success.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/publish-success.png)
 
 # 1.6	- Browsing the API in the Developer Portal
 
 1. Open a new tab in the Firefox web browser by clicking on the new tab `+` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/new-tab.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/new-tab.png)
 
 1. A bookmark is already saved for the `Portal`, click on the bookmark to open the portal home page.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/portal-bookmark.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/portal-bookmark.png)
 
 1. Click on the `API Products` link to see the available products published to the portal.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/api-products-link.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/api-products-link.png)
 
 1. You should see the published `hello-world` API in the list of products.
 
-  ![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/publishedAPI.png)
+  ![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/publishedAPI.png)
 
 	It should be noted that the hello-world application has more to it than we've shown in this lab. You're encouraged to dig in and discover the custom method that's implemented. In future labs, we'll be doing more work in the Developer Portal. For instance we'll be customizing the portal theme, registering an application, subscribing to APIs and testing them from a separate consumer application.
 
 1. Close the `Firefox` web browser. If a warning is presented about closing multiple tabs, deselect the option to notify you in the future and click the `Close Tabs` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab1/close-firefox.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/close-firefox.png)
 
 1. In the terminal, use the `control+c` keyboard command to quit the API Designer program.
 
@@ -326,6 +326,6 @@ In this lab you learned:
 
 Proceed to [Lab 2 - Create a LoopBack Application](../Lab%202%20-%20Create%20a%20LoopBack%20Application)
 
-[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/troubleshooting.png "Troubleshooting"

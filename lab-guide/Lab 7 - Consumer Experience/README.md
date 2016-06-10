@@ -44,68 +44,68 @@ Now that we have explained the contents of a custom theme file, it is time to lo
 
 1. From the Firefox browser, click the `Portal` bookmark on the toolbar to lauch the developer portal.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/DeveloperPortalFirefoxBookmark.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/DeveloperPortalFirefoxBookmark.png)
 
 1. Login into the developer portal as an administrator using a username of `admin` and a password of `Passw0rd!`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalAdminLogin.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalAdminLogin.png)
 
 1. From the Administrator menu, select `Appearance` and then `Install new theme`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/InstallNewPortalTheme.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/InstallNewPortalTheme.png)
 
 1. Click the `Browse` button and navigate to the `/home/student/lab_files/lab7/` directory and select the `think_ibm_connect_theme.zip file`, then click the `Open` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/open-theme-zip.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/open-theme-zip.png)
 
 1. Click the `Install` button to install the **ThinkIBM** custom theme.   
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/InstallPortalThemeZipFile.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/InstallPortalThemeZipFile.png)
     
 1. The installation of the custom theme completes. Click the `Enable newly added themes` link.
    
 1. Scroll down the list of themes to find the `thinkibm_connect 7.43` theme. Click the `Enable and set default link` link.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/EnableandSetDefaultThinkIBMTheme.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/EnableandSetDefaultThinkIBMTheme.png)
        
 1. We need to go into settings for the theme and save the configuration. Click the `Settings` link under the theme.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/ThinkIBMSettings.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/ThinkIBMSettings.png)
    
 1. Scroll down to the bottom of the settings page to find the **Toggle Display** section. Expand the **Toggle click the `Save Configuration` button at the bottom of the screen:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/ThinkIBMSaveConfiguration.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/ThinkIBMSaveConfiguration.png)
 	
 1. Click the `Home` icon to return to the home page.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/CloseThemeSettings.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/CloseThemeSettings.png)
 
 ### 7.1.2 - Customize the Welcome Banner
 Now we want to change the default Welcome banner to use our custom Welcome banner image. 
 
 1. Navigate to the blocks content page by selecting `Content > Blocks` from the admin menu.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/ThinkIBMBlocks.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/ThinkIBMBlocks.png)
 
 1. Underneath operations select `Edit` to the right of the Welcome banner block.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/EditWelcomeBannerBlock.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/EditWelcomeBannerBlock.png)
 	   
 1. Scroll down the banner edit page, click the `Browse` button underneath **Image** to launch the file explorer.
 
 1. Navigate to the `/home/student/lab_files/lab7/think_ibm_connect_theme` directory and select the `thinkibm_welcome_banner.png` file. Then, click the `Open` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/open-welcome-banner-img.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/open-welcome-banner-img.png)
 
 1. Click the `Upload` button to upload the new welcome banner image.
 
 1. Scroll to the bottom of the page and click the `Save` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SaveWelcomeBanner.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SaveWelcomeBanner.png)
 
 1. Close the content block settings.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/CloseContentBlockSettings.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/CloseContentBlockSettings.png)
 
 ### 7.1.3 - Change the Region Settings for the Content Blocks
 
@@ -113,29 +113,29 @@ The region settings for some of the content blocks have been reset, so we will s
 
 1. Navigate to the region settings for block content page by selecting `Structure > Blocks` from the admin menu.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/ThinkIBMBlockRegionSettings.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/ThinkIBMBlockRegionSettings.png)
 
 1. Locate the **Sidebar first** block. You will see entries for `Navigation`, `Support` and `User login`.
 
 1. For **both** the `Navigation` and `User Login` entries, select `- None -` from the drop down menu.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SetBlockRegionstoNone.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SetBlockRegionstoNone.png)
 
 1. The only entry left in the section should be `Support`.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/sidebar-first-complete.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/sidebar-first-complete.png)
 
 1. Scroll down to the bottom of the screen anc click the `Save Blocks` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SaveBlockRegions.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SaveBlockRegions.png)
 
 1. Click close on the block region settings.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/CloseContentBlockSettings.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/CloseContentBlockSettings.png)
 
 1. You are finished with customizing the developer portal. There is a lot more that can be customized than what we have time for in this lab. Log out of the developer portal.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalAdminLogout.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalAdminLogout.png)
 
 ## 7.2 - Register an Application as a Developer 
 
@@ -143,46 +143,46 @@ In this section, you will log into the portal as a user in the application devel
 
 1. Login into the developer portal as an application developer using a username of `developer@consumer.ibm` and a password of `Passw0rd!`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalDeveloperLogin.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalDeveloperLogin.png)
 
 1. Click the `Apps` link.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalAppsList.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalAppsList.png)
 
 1. Click the `Register new Application` link.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/RegisterNewApplication.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/RegisterNewApplication.png)
 
 1. Enter a title and description for the application as shown below and click the `Submit` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SubmitNewApplication.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SubmitNewApplication.png)
 
 1. We need to capture the Client Secret and Client ID in a text editor for later use by our web application. Select the `Show Client Secret` checkbox next to Client Secret at the top of the page and the `Show` checkbox next to Client ID.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/ShowClientSecretandID.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/ShowClientSecretandID.png)
 
 1. Launch the `Notes` application as shown below. 
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SelectNotesApp.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SelectNotesApp.png)
 	
 1. Navigate back to the browser and copy/paste both the Client ID and Client Secret into the Notes application window as shown below. Add a notation above each item so you know which value is the Client ID and which is the Client Secret. Do not exit the Notes application as we will need these values later in this lab.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SaveClientIDandSecret.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SaveClientIDandSecret.png)
 
 ## 7.3 - Subscribe to a Plan for the ThinkIBM APIs 
 In this section, we will subscribe to a plan for the ThinkIBM APIs using the Think IBM Web Consumer application.
 
 1. Click the `API Products` link.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalAPIProductsList.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalAPIProductsList.png)
 
 1. Click the `think (v1.0.0)` API product link.                                                          
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SelectThinkIBMProduct.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SelectThinkIBMProduct.png)
 
 1. Click the `Plans` link on the left-hand navigation menu and then click the `Subscribe` button under the **Silver** plan as shown below.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SubscribetoThinkSilverPlan.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SubscribetoThinkSilverPlan.png)
 	
 	> ![Alt text][info]
 	> 
@@ -190,23 +190,23 @@ In this section, we will subscribe to a plan for the ThinkIBM APIs using the Thi
 
 1. Select the `Think IBM Web Consumer` toggle and click the `Subscribe` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SubscribeThinkIBMWebApplicationtoPlan.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SubscribeThinkIBMWebApplicationtoPlan.png)
 
 1. The `Think IBM Web Consumer` Web application is now subscribed to the Silver plan for the `think` API product.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/ThinkIBMWebApplicationSubscribed.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/ThinkIBMWebApplicationSubscribed.png)
 
 1. Let's validate that we subscribed to the Silver plan for the `think v1.0.0` API product. Click the `Apps` link.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalAppsList.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalAppsList.png)
 
 1. Click the `Think IBM Web Consumer` application link.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SelectThinkIBMWebConsumerApp.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SelectThinkIBMWebConsumerApp.png)
 
 1. The `Think IBM Web Consumer` application is subscribed to the Silver plan for the `think` product as shown below.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/ValidateSubscribedtoThinkSilverPlan.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/ValidateSubscribedtoThinkSilverPlan.png)
 
 ## 7.4 - Test `think` Product APIs from the Developer Portal
 
@@ -214,23 +214,23 @@ In this section, we will use the developer portal to test one of the think produ
 
 1. Click the `API Products` link.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalAPIProductsList.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalAPIProductsList.png)
 
 1. Click the `think (v1.0.0)` API product link.
 
-  ![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SelectThinkIBMProduct.png)
+  ![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SelectThinkIBMProduct.png)
 
 1. Click the `logistics 1.0.0` link on the left-hand navigation menu and then expand the `GET /shipping` path by clicking on the twisty next to the path.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalExpandShipping.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalExpandShipping.png)
 
 1. Scroll down to the **Try this operation** section for the `GET /shipping` path. Enter any zip code and click the `Call Operation` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalTryShippingOperation.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalTryShippingOperation.png)
 
 1. Scoll down below the `Call operation` button. You should see a `200 OK` and a response body as shown below.
   
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/PortalTryShippingOperationResultsSuccess.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalTryShippingOperationResultsSuccess.png)
 
 ## 7.5 - Configure and Run a Consumer Application
 
@@ -240,25 +240,25 @@ The application will handle the OAuth token exchange on our behalf, as well as p
 
 1. Launch the `Sublime Text` editor window from the task bar if it is already open, or from the favorites menu as shown below:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/launch-sublime-text.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/launch-sublime-text.png)
 
 1. In the `Sublime Text` editor file tree menu, expand the `lab7 > consumer_app > config` folder and select the `default.json` file to edit the source.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/open-default-json.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/open-default-json.png)
 
 1. Using the Client ID and Client Secret values in the Notes application, copy/paste them into the `"client_id":""` and `"client_secret":""` values between the quotes in the `default.json` file as shown below:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/EditOpenThinkIBMWebConsumerConfigFile.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/EditOpenThinkIBMWebConsumerConfigFile.png)
 
 1. With the `default.json` tab in the Sublime Text editor window selected, choose  `File > Save` from the application menu.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/SaveOpenThinkIBMWebConsumerConfigFile.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SaveOpenThinkIBMWebConsumerConfigFile.png)
 
 1. Now we will open a fresh Terminal Emulator window so we can start the `Think IBM Web Consumer` application.
 
   Click the favorites menu and select `Terminal Emulator` as shown below.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/launch-teminal-emulator.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/launch-teminal-emulator.png)
 
 1. Navigate to the `/home/student/lab_files/lab7/consumer_app/` directory by entering the `cd` command as shown below:
 
@@ -274,7 +274,7 @@ The application will handle the OAuth token exchange on our behalf, as well as p
 
 1. The `Think IBM Web Consumer` application launches in a browser window.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/think-consumer-home.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/think-consumer-home.png)
 
 ## 7.6 - Test the APIs from the Think IBM Web Consumer Application
 
@@ -282,7 +282,7 @@ The application will handle the OAuth token exchange on our behalf, as well as p
 
 1. Enter any Username and Password then click the `Log In` button. Our sample authentication service is a dummy repository that will accept any credentials provided.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/consumer-login.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/consumer-login.png)
 
 	> ![][info]
 	> 
@@ -298,19 +298,19 @@ The application will handle the OAuth token exchange on our behalf, as well as p
 
 	Notice how the product rating is updated automatically as new reviews are posted. This happens because of the custom code you added to the LoopBack application in Lab 3.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/sample-reviews.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/sample-reviews.png)
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/updated-rating.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/updated-rating.png)
 
 1. Continue testing the features of the consumer application. Try entering your home zip code to obtain shipping data. This feature is powered by the `logistics` APIs that were built using advanced assembly techniques in Lab 5. Your quotes will vary based on the zip code provided.
 
 	Notice how you are also provided a link to the nearest store. Clicking here will launch the Google Maps link which was also built in our Lab 5 assembly.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/shipping-results.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/shipping-results.png)
 
 1. Finally, try clicking on the `Calculate Monthly Payment` link. This feature is powered by the `financing` API that was created using our REST-to-SOAP assembly in Lab 5.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab7/financing-results.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/financing-results.png)
 
 1. Repeat the steps on a few of products to drive data into the analytics database.
 
@@ -320,6 +320,6 @@ The application will handle the OAuth token exchange on our behalf, as well as p
 
 Proceed to [Lab 8 - Analytics in API Connect](../Lab%208%20-%20Analytics%20in%20API%20Connect)
 
-[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/troubleshooting.png "Troubleshooting"

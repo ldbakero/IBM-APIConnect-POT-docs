@@ -40,7 +40,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 	You should see the APIs view, and a single API listed. The `inventory` API was automatically created during loopback app generation. We will edit this API at a later step.
 	
-	![alt text](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/startapidesigner.png)
+	![alt text](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/startapidesigner.png)
 
 ## 4.2 - Adding a New OAuth 2.0 Provider API
 
@@ -56,7 +56,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	> Description: `API for Obtaining Access Tokens`
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/newoauthprops-1of2.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/newoauthprops-1of2.png)
 
 1. Accept the default radio button selection labeled `Don't add to a product` and click the `Add` button.
 
@@ -64,7 +64,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	The API Editor opens to the newly created `oauth` API. The left hand side of the view provides shortcuts to various elements within the API definition: Info, Host, Base Path, etc. By default, the API Editor opens to the `Design` view, which provides a user-friendly way to view and edit your APIs. You may notice additional tabs labeled `Source` and `Assemble`. We will work with these views as well.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/newoauth-start.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/newoauth-start.png)
 
 1. Navigate to the `Host` section of the API. Remove `$(catalog.host)` from the Host field, as we want to keep this blank.
 
@@ -88,7 +88,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 1. We want to configure this provider to *only* support the Resource Owner Password Credentials grant type. Deselect the `Implicit`, `Application` and `Access Code` Grants, but leave `Password` checked.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/oauthgranttypes.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/oauthgranttypes.png)
 
 1. Set the remaining OAuth 2 settings as follows:
 
@@ -104,7 +104,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	When complete, your settings should look like this:
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/edit-oauthoauth2.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/edit-oauthoauth2.png)
 
 	> ![][important]
 	> 
@@ -116,11 +116,11 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 1. Change the `/oauth2/token` path to `/token`
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/edit-oauthpaths.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/edit-oauthpaths.png)
 
 1. Click the `Save` icon in the top right corner of the editor to save your changes.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/save-icon.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/save-icon.png)
 
 ## 4.3 - Configuring and Securing the Inventory API
 
@@ -145,7 +145,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 
 	Click the `+` icon in the **Security Definitions** section and select `OAuth` from the menu.  
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/inv-addoauthsecuritydef.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/inv-addoauthsecuritydef.png)
 	
 	A new security definition is created for you, called `oauth-1 (OAuth)`.
 
@@ -167,11 +167,11 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	> Description: `Access to all inventory resources`
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/inv-oauth.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/inv-oauth.png)
 
 1. Navigate to the `Security` section and check the `oauth (OAuth)` checkbox.  
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/inv-security-addoauth.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/inv-security-addoauth.png)
 	
 	Now that the API is secured using our OAuth provider, we can define how the API should behave when called. In the next two sections, we will configure the `inventory` API to call our inventory application which was published at the end of Lab 3.
 
@@ -195,7 +195,7 @@ For example, we will configure the `inventory` API to invoke a backend service. 
 	
 	> Value: `http://appsvr.think.ibm`
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/inventory_appserver_property.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/inventory_appserver_property.png)
 
 	> ![][important]
 	> 
@@ -211,11 +211,11 @@ For example, we will configure the `inventory` API to invoke a backend service. 
 
 1. Click on the Notepad icon in the top-righthand corner of the OS task bar.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/notepad.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/notepad.png)
 
 1. Copy the `Host header` from the notepad.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/copy_app-id.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/copy_app-id.png)
 
 1. Add a new value to the `app-id` property:
 
@@ -223,7 +223,7 @@ For example, we will configure the `inventory` API to invoke a backend service. 
 	
 	> Value: paste the value of the `app-id` here
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/inventory_appid_property.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/inventory_appid_property.png)
 
 	> ![][troubleshooting]
 	> 
@@ -231,14 +231,14 @@ For example, we will configure the `inventory` API to invoke a backend service. 
 
 1. Save your changes.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/save-icon.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/save-icon.png)
 
 ## 4.5 - Defining API Processing Behavior
 An API Assembly provides collection of policies which are enforced and executed on the API Gateway. Policies include actions like modifying the logging behavior and altering the message content or headers. Additionally, if the out of the box policies do not meet your specific needs, you may opt to create your own policy and have it available for API designers through the API Connect UI.
 
 1. Switch to the `Assemble` tab. A simple assembly has been created for you.  
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/inv-assembly-start.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/inv-assembly-start.png)
 
 1. Modify your assembly to use DataPower Gateway policies.
 
@@ -246,7 +246,7 @@ An API Assembly provides collection of policies which are enforced and executed 
 	
 	Select the `DataPower Gateway policies` radio button.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/filter-datapowerpolicies.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/filter-datapowerpolicies.png)
 
 1. Add an `activity-log` policy to the assembly and configure it to log API payload.  
 
@@ -256,7 +256,7 @@ An API Assembly provides collection of policies which are enforced and executed 
 
 	Under `Content` select `payload` from the drop-down list.  
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/inv-assembly-logpayload.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/inv-assembly-logpayload.png)
 
 1. Click on the `X` to close the activity-log editor menu.
 
@@ -276,7 +276,7 @@ An API Assembly provides collection of policies which are enforced and executed 
 	
 	> Value: `$(app-id)`
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/set_app-id_host_header.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/set_app-id_host_header.png)
 
 1. Click on the `X` to close the set-variable editor menu.
 
@@ -286,7 +286,7 @@ An API Assembly provides collection of policies which are enforced and executed 
 
 	Update the URL to be: `$(app-server)$(request.path)`
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/invoke_url.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/invoke_url.png)
 	
 	> ![][info]
 	> 
@@ -296,7 +296,7 @@ An API Assembly provides collection of policies which are enforced and executed 
 
 1. Save your changes.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab4/save-icon.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/save-icon.png)
 
 1. Close the Firefox browser by clicking the `x` on the tab or browser window.
 
@@ -336,6 +336,6 @@ Using both the CLI and the API Designer, a lot of files have been created and up
 
 Proceed to [Lab 5 - Advanced API Assembly](../Lab%205%20-%20Advanced%20API%20Assembly)
 
-[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/troubleshooting.png "Troubleshooting"

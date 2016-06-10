@@ -33,15 +33,15 @@ Before publishing the API for our application, the configuration file that was g
 
 1. Click on the application favorites menu and open the `Atom` text editor.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/launch-atom.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/launch-atom.png)
 
 1. From the `Atom` menu, click on `File > Open Folder`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/atom-open-folder.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-open-folder.png)
 
 1. Click on the `student` location from the Places menu, then navigate to the `ThinkIBM > inventory` folder and click the `OK` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/atom-open-folder-inventory.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-open-folder-inventory.png)
 
 	> ![][info]
 	> 
@@ -49,15 +49,15 @@ Before publishing the API for our application, the configuration file that was g
 
 1. From the folder tree menu, expand the `server` folder and click on the `config.json` file to view the source.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/atom-open-config.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-open-config.png)
 
 1. Edit line 2 of the `config.json` file. Change `/api` to `/inventory`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/atom-edit-config.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-edit-config.png)
 
 1. Use the `Atom` file menu to save the changes.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/atom-save-changes.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-save-changes.png)
 
 ## Lab 3.2 - Create a Remote Hook
 
@@ -69,17 +69,17 @@ For more information on Remote Hooks please see:
 
 1. In the `Atom` editor, expand the directory structure for the `common/models` location and select the `item.js` file.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/atom-item-file1.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-item-file1.png)
 
 1. You are going to update this file to include a new remote hook function which will run *after* a new review is submitted for an item. The function will take an average of all reviews for that item, then update the item rating in the MySQL data source.
 
 1. To avoid potential for typing errors, a sample file is available for you to copy. Use the favorites menu to open the `Sublime Text` application.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/launch-sublime-text.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/launch-sublime-text.png)
 	
 1. Expand the `lab_files/lab3` folder and select the example `item.js` file.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/sublime-item-file.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/sublime-item-file.png)
 	
 1. Use the menu option for `Selection > Select All` to highlight all of the text.
 
@@ -87,7 +87,7 @@ For more information on Remote Hooks please see:
 
 1. Return to the `Atom` application. **Remove** everything in the `item.js` file. Then paste (`control+v` or `Edit > Paste`) the contents of your clipboard to update the file.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/atom-item-file2.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-item-file2.png)
 
 	```javascript
 	module.exports = function (Item) {
@@ -138,11 +138,11 @@ In this section, you will publish the `inventory` application to a Liberty runti
 
 1. Use the favorites menu to launch the `Firefox Web Browser`:
 
-	  ![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/launch-firefox.png)
+	  ![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/launch-firefox.png)
 
 1. Click on the `API Manager` bookmark:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/api-mgr-bookmark.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/api-mgr-bookmark.png)
 
 1. Enter the following credentials and then click the the `Sign in` button:
 
@@ -154,11 +154,11 @@ In this section, you will publish the `inventory` application to a Liberty runti
 	> 
 	> Username and Password may already be saved for you by the browser, you can re-use these saved credentials.
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/api-mgr-login.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/api-mgr-login.png)
 	
 1. Now that the API Manager Dashboard is open, click the `+ Add` button and select `App` from the list:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/api-mgr-add-app.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/api-mgr-add-app.png)
 
 1. Fill out the `Add App` form with the following details:
 
@@ -168,7 +168,7 @@ In this section, you will publish the `inventory` application to a Liberty runti
 	
 	> Collective: `AppSvr`
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/api-mgr-app-info.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/api-mgr-app-info.png)
 
 1. Click the `Add` button to link the application between our API Connect server and the Liberty Collective server. This step creates a registration that allows app management from API Connect once the application is published.
 
@@ -176,15 +176,15 @@ In this section, you will publish the `inventory` application to a Liberty runti
 
 1. Click on the `hyperlink` icon inside of the `Inventory` app tile.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/app-config-link.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/app-config-link.png)
 
 1. Copy the contents of the popup to your system clipboard.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/app-config-link-copy.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/app-config-link-copy.png)
 
 1. Click on the user profile icon and select `Log Out`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/api-mgr-signout.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/api-mgr-signout.png)
 
 1. Close the Firefox browser by clicking the `x` on the tab or browser window.
 
@@ -236,21 +236,21 @@ In this section, you will publish the `inventory` application to a Liberty runti
 
 1. The terminal will prompt you when the publication is complete:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/app-published.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/app-published.png)
 
 1. You will need the `host` header that is returned in the next lab.
 
 	**Highlight** the `host header:` value and then **right-mouse-click** to show the menu and select `Copy`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/app-copy-host.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/app-copy-host.png)
 	
 1. Open the `Notes` application by clicking on the notepad icon in the task bar:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/launch-notepad.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/launch-notepad.png)
 	
 1. Paste (use the `control+v` keyboard command) the host header into the `Notes` window. Add a label so that you know what the value is:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/lab3/notes-save-host.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/notes-save-host.png)
 
 # Lab 3 - Validation
 
@@ -280,7 +280,7 @@ In this lab you learned:
 
 Proceed to [Lab 4 - Configure and Secure an API](../Lab%204%20-%20Configure%20and%20Secure%20an%20API)
 
-[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/troubleshooting.png "Troubleshooting"
 

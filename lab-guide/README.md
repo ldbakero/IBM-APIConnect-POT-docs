@@ -2,7 +2,7 @@
 
 ##### Firmware Version:  5.0.1.0
 
-![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/api-connect.png)
+![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/api-connect.png)
 
 ## Table of Contents
 
@@ -67,6 +67,6 @@ The following symbols appear in lab guides at places where additional guidance i
 
 Proceed to [Lab 1 - Introduction to IBM API Connect](./Lab%201%20-%20Introduction%20to%20IBM%20API%20Connect)
 
-[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/important.png "Important!"
-[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/info.png "Information"
-[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/master/lab-guide/img/common/troubleshooting.png "Troubleshooting"
+[important]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/important.png "Important!"
+[info]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/info.png "Information"
+[troubleshooting]: https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/common/troubleshooting.png "Troubleshooting"
