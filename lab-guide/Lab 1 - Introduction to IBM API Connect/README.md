@@ -35,14 +35,14 @@ For this lab, you will be using a VMWare image running Xubuntu that is pre-insta
 	
 1. The update pulls down a clone of our git repo and moves the support files to the proper locations. The update will take a few minutes, please be patient while the update completes.
 
-# 1.1	- Creating a `hello-world` Application
+# 1.1	- Creating a `notes` Application
 
 1.	We will use the API Connect Developer Toolkit command line interface to create the initial application and explore the created artifacts.
 
 1.	From the terminal command line type:
 
 	```bash
-	apic loopback hello-world
+	apic loopback
 	```
 	
 	This command starts the application generator, Yeoman, to help scaffold the new project. Just press enter for each of the three questions.
@@ -58,21 +58,21 @@ For this lab, you will be using a VMWare image running Xubuntu that is pre-insta
 	   __'.___.'__
 	 ´   `  |° ´ Y `
 	
-	? What's the name of your application? hello-world
-	? Enter name of the directory to contain the project: hello-world
-	   create hello-world/
+	? What's the name of your application? notes
+	? Enter name of the directory to contain the project: notes
+	   create notes/
 	     info change the working directory to hello-world
 	
-	? What kind of application do you have in mind? hello-world (A project containing a basic working e
-	xample, including a memory database)
+	? What kind of application do you have in mind?
+	❯ notes (A project containing a basic working example, including a memory database)
 	```
 	
-	This creates an application named "hello-world" in a directory of the same name. The application is a basic Hello World application. You will see a lot of messages printed to the command line window. It is creating a few resources for you and installing the various node modules. Once the node modules are loaded you'll notice that the process creates swagger and product definitions for you. Finally, the process displays some hints about what to do next. Since we've been given such lovely suggestions about what to do next, we may as well follow the first one at least.
+	This creates an application named `notes` in a directory of the same name. The application is a simple notes application which allows you to create, update, read and delete text notes. You will see a lot of messages printed to the command line window. It is creating a few resources for you and installing the various node modules. Once the node modules are loaded you'll notice that the process creates swagger and product definitions for you. Finally, the process displays some hints about what to do next. Since we've been given such lovely suggestions about what to do next, we may as well follow the first one at least.
 
 1. Change directories to the project directory:
 	
 	```bash
-	cd hello-world
+	cd notes
 	```
 
 1. List the directory:
@@ -106,38 +106,21 @@ For this lab, you will be using a VMWare image running Xubuntu that is pre-insta
 >
 > `*.md` files, such as that found in the client directory, are markdown files used for internal documentation.
 
-# 1.2	- Launching the `hello-world` Application
+# 1.2	- Launching the `notes` Application
 
 1. Now that we've explored what is created by the application generator, let's move on to the API Designer. From the command line:
 
 	```bash
 	apic edit
 	```
-Alternatively, if you'd rather not login to bluemix:
 
-	```bash
-	SKIP_LOGIN=true apic edit
-	```
-
-	```text
-	TODO: add instructions for signing in to bluemix
-	```
-
-1. To test our hello-world services, click on the `run` button to open the application launcher.
+1. To test our notes services, click on the `run` button to open the application launcher.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/run.png)
-	
-1. Next, click on the `start` button to launch the `hello-world` application.
-	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/start.png)
 	
 1. Once start completes, you should see a screen similar to this:
 	
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/app-running.png)
-	
-1. Notice that once the application is up and running, stop and restart buttons will appear on the right side of the screen:
-	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/stop-restart.png)
 	
 	At this point we're ready to Explore and test our services.
 
@@ -145,7 +128,7 @@ Alternatively, if you'd rather not login to bluemix:
 	> 
 	> We used the web-based editor to launch the application. There's also a command provided with the API Connect Developer Toolkit that can be utilized from the terminal to lauch the application: `apic start`
 
-# 1.3	- Testing the `hello-world` Application
+# 1.3	- Testing the `notes` Application
 
 1. Click the `Explore` button to switch to the API Explorer view.
 
@@ -154,7 +137,7 @@ Alternatively, if you'd rather not login to bluemix:
 	You will see all the exposed service paths displayed.
 	
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/exploreScreen.png)
-
+	
 1. Now we're going to test the services using the GUI presented on the explore screen. You'll notice that on the left several REST services are defined for us. In particular, take a look `POST /notes` and `GET /notes`.
 
 	If you're not familiar with GET and POST, they are HTTP methods (sometimes called verbs). The POST method is used for creation calls to the service. The GET method is used to retrieve information from a service. In this case, we see that both methods are used against the `/notes` path. So, POST will create a `note` and GET will retrieve all the `notes` that have been created.
@@ -173,15 +156,15 @@ Alternatively, if you'd rather not login to bluemix:
 	
 1. Go ahead and press the `Call operation` button and scroll down to the `Response` section to see the results.
 	
-	In the results, you should see a `Code: 200 OK` which indicates that a new `note` was created. If you received a different response, see the troubleshooting steps below.
-	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/POST-results.png)
-	
 	> ![][troubleshooting]
 	>
 	> You may see an error displayed that mentions a CORS issue. This has to do with certificates in your browser. Go ahead an click the given link to rectify this, accept any certificate, close the opened tab, and press the `Call operation` button again.  Additionally, be sure not to skip step 5, as doing a `POST` operation without generating payload will cause an error.
 	
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/CORS-support-error.png)
+	
+	In the results, you should see a `Code: 200 OK` which indicates that a new `note` was created. If you received a different response, see the troubleshooting steps below.
+	
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/POST-results.png)
 	
 	> ![][troubleshooting]
   >
@@ -223,9 +206,9 @@ In the previous steps, you started the new application along with a MicroGateway
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/apis-menu.png)
 
-1. Click on the `hello-world` API from the list.
+1. Click on the `notes` API from the list.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/hello-world-api.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/notes-api.png)
 
 1. Click on the `Assemble` option from the API menu bar.
 
@@ -301,11 +284,13 @@ In the previous steps, you started the new application along with a MicroGateway
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/api-products-link.png)
 
-1. You should see the published `hello-world` API in the list of products.
+1. You should see the published `notes` API in the list of products.
 
   ![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/publishedAPI.png)
-
-	It should be noted that the hello-world application has more to it than we've shown in this lab. You're encouraged to dig in and discover the custom method that's implemented. In future labs, we'll be doing more work in the Developer Portal. For instance we'll be customizing the portal theme, registering an application, subscribing to APIs and testing them from a separate consumer application.
+  
+  ```
+	TODO: Update screenshot
+	```
 
 1. Close the `Firefox` web browser. If a warning is presented about closing multiple tabs, deselect the option to notify you in the future and click the `Close Tabs` button.
 
