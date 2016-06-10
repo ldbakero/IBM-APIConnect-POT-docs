@@ -68,7 +68,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1. Click on `Base Path` menu option and set the base path to `/financing`.
 
-	![]()
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_api_basepath.png)
 
 1. Click on the `Schemes` menu option, or select it from the API editor menu. Enable the `https` scheme.
 
@@ -326,7 +326,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1. Click the `invoke` policy to open its editor.
 
-1. Set the `Invoke URL` to: `https://services.think.ibm:1443/financing/calculate`.
+1. Set the `URL` to: `https://services.think.ibm:1443/financing/calculate`.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_invoke_url.png)
 
@@ -368,17 +368,19 @@ Rather than require you to build the entire API from scratch again, you will see
 
 1. Click on the `+ Add` button to import a new `OpenAPI (Swagger 2.0)`.
 
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/import-logistics-api.png)
+
 1. Click on the `Select File` button to open the file browser. Navigate to the `~/home/student/lab-files/lab5` folder and choose the `api_logistics.yaml` file.
 
-	![][]
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/open-swager-file.png)
 
 1. Click the `import` button to import the `logistics` API definition template.
 
-	![][]
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/import-logistics-api-2.png)
 
 1. Click on the `logistics 1.0.0` API from the list to browse the API definition.
 
-	![][]
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/open-logistics-api.png)
 
 ### 5.2.2 - Create the Logistics API Assembly
 
@@ -396,9 +398,7 @@ Rather than require you to build the entire API from scratch again, you will see
 
 1. Select the `get /shipping` operation.
 
-1. Click the `+ Case` button to add a second case for the `get /stores` operation.  
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/logistics-operationswitch-cases.png)
+1. Click the `+ Case` button to add a second case for the `get /stores` operation.
 
 1. Click the `X` to close the operation switch configuration editor.
 
@@ -428,7 +428,7 @@ This operation will end up invoking two separate back-end services to acquire sh
 
 1. Hover over the `invoke_xyz` policy and click on the `clone` button to add another invoke action:
 
-	![][]
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/clone-invoke-action.png)
 
 1. Edit the new invoke policy with the following properties:
 
