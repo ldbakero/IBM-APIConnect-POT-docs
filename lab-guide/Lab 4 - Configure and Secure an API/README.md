@@ -54,7 +54,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	> Add to an existing product: `inventory 1.0.0`
 	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/newoauthprops-1of2.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/newoauthprops.png)
 
 1. The API Editor will launch. If this is your first time using the API Editor, you will see an informational message. When you are ready to proceed, click the `Got it!` button to dismiss the message.  
 	
