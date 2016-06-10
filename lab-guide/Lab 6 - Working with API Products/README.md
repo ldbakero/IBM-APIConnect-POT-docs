@@ -65,7 +65,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 		
 	> License URL: `https://opensource.org/licenses/MIT`
 		
-	> Terms of Service: paste the contents of the `lab6/license.txt` file
+	> Terms of Service: paste the contents of the `/home/student/lab-files/lab6/license.txt` file
 	  
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab6/think-licensetos.png)
 	
@@ -115,37 +115,7 @@ In the case of **ThinkIBM**, you will publish all of our API's together as a sin
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab6/think-publish.png)
 
-1. Select `Add and Manage Targets` from the menu.
-
-1. Select `Add a different target`.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab6/publish-adddifferent.png)
-
-1. Provide connection information to sign into the IBM API Connect management server, then click the `Sign in` button:
-
-	> API Connect host address: `mgr.think.ibm`
-	
-	> Username: `student@think.ibm`
-	
-	> Password: `Passw0rd!`  
-	
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab6/publish-target-signin.png)
-
-1. On the **Select an organization and catalog** screen, choose the `Sandbox` catalog and click the `Next` button.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab6/publish-sandbox-catalog.png)
-
-1. On the **Select an App** screen, choose the `Inventory` application and click the `Save` button.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab6/publish-inventory-app.png)
-	
-	> ![][info]
-	> 
-	> Our offline toolkit environment is now configured to speak to the central management server.
-	> 
-	> Since we already published the Inventory app in Lab 3, now all we need to do is publish the associated Product containing the APIs.
-
-1. Click `Publish` button once more and select our target:
+1. Select our target:
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab6/publish-target.png)
 
