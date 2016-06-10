@@ -73,19 +73,23 @@ For more information on Remote Hooks please see:
 
 1. You are going to update this file to include a new remote hook function which will run *after* a new review is submitted for an item. The function will take an average of all reviews for that item, then update the item rating in the MySQL data source.
 
-1. To avoid potential for typing errors, a sample file is available for you to copy. Use the favorites menu to open the `Sublime Text` application.
+1. From the `Atom` menu, click on `File > Open Folder`.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/launch-sublime-text.png)
-	
-1. Expand the `lab_files/lab3` folder and select the example `item.js` file.
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-open-folder.png)
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/sublime-item-file.png)
+1. Click on the `student` location from the Places menu, then navigate to the `lab-files` folder and click the OK button.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-open-lab-files.png)
 	
-1. Use the menu option for `Selection > Select All` to highlight all of the text.
+1. Expand the `lab-files/lab3` folder and select the example `item.js` file.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/item-file.png)
+	
+1. Use the menu option for `Edit > Select All` to highlight all of the text.
 
 1. Use the menu option for `Edit > Copy` to copy the file contents your clipboard.
 
-1. Return to the `Atom` application. **Remove** everything in the `item.js` file. Then paste (`control+v` or `Edit > Paste`) the contents of your clipboard to update the file.
+1. Return to the other `Atom` application. **Remove** everything in the `item.js` file. Then paste (`control+v` or `Edit > Paste`) the contents of your clipboard to update the file.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/atom-item-file2.png)
 
@@ -130,11 +134,11 @@ For more information on Remote Hooks please see:
 
 1. Use the `File > Save` menu option to save the changes.
 
-## Lab 3.3 - Publish App to a Liberty Collective
+## Lab 3.3 - Publish App to a Collective
 
 In this section, you will publish the `inventory` application to a Liberty runtime collective for general consumption.
 
-### 3.3.1 - Register the App with API Connect and Liberty
+### 3.3.1 - Register the App with API Connect
 
 1. Use the favorites menu to launch the `Firefox Web Browser`:
 
@@ -172,21 +176,13 @@ In this section, you will publish the `inventory` application to a Liberty runti
 
 1. Click the `Add` button to link the application between our API Connect server and the Liberty Collective server. This step creates a registration that allows app management from API Connect once the application is published.
 
-### 3.3.2 - Configure the Developer Toolkit to Communicate with API Connect
-
-1. Click on the `hyperlink` icon inside of the `Inventory` app tile.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/app-config-link.png)
-
-1. Copy the contents of the popup to your system clipboard.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/app-config-link-copy.png)
-
 1. Click on the user profile icon and select `Log Out`.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/api-mgr-signout.png)
 
 1. Close the Firefox browser by clicking the `x` on the tab or browser window.
+
+### 3.3.2 - Configure the Developer Toolkit to Communicate with API Connect
 
 1. Return to your `Terminal Emulator` session, or open a new one if you had closed it previously.
 
@@ -196,45 +192,69 @@ In this section, you will publish the `inventory` application to a Liberty runti
 	cd ~/ThinkIBM/inventory
 	```
 
-1. Use the terminal menu bar to select `Edit > Paste` to paste the contents of your clipbard. If you did not copy the command earlier, you can type it here:
+1. Launch the API Designer:
 
 	```bash
-	apic config:set app=apic-app://mgr.think.ibm/orgs/sales/apps/inventory
+	apic edit
 	```
 
-1. Continue setting up the development environment by logging into the API Connect management server:
+1. Click the `Publish` icon.
 
-	```bash
-	apic login --type app
-	```
-	
-1. Use the following credentials when prompted:
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/publishButton.png)
 
-	> Server: `mgr.think.ibm`
+1. Select `Add and Manage Targets` from the menu.
+
+1. Select `Add a different target`.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/add-target.png)
+
+1. Provide connection information to sign into the IBM API Connect management server, then click the `Sign in` button:
+
+	> API Connect host address: `mgr.think.ibm`
 	
 	> Username: `student@think.ibm`
 	
-	> Password: `Passw0rd!`
+	> Password: `Passw0rd!`  
+	
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/publish-target-signin.png)
+
+1. On the "Select an organization and catalog" screen, choose the `Sandbox` catalog and click the `Next` button.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/publish-sandbox-catalog.png)
+
+1. Select the `inventory` application, then click `Save`.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/select-inventory-app.png)
 
 ### 3.3.3 - Publish the Application
 
-1. Ensure the Liberty Collective server is up and running by typing:
+1. Click `Publish` button once more and select our target, indicated by the grey highlighting:
 
-	```bash
-	wlpn-controller start
-	```
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/publish-target.png)
 
-1. Type the following command to package the `inventory` application and publish it to the collective server:
-	
-	```bash
-	apic apps:publish
-	```
+1. Click the check box to select `Publish application`, then click the `Publish` button.
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/publish-application.png)
 	
 	> ![][info]
 	> 
-	> We used the command line in the previous few steps to publish the application. However, we could have also used the API Designer web experience to accomplish the same task.
+	> The Developer Toolkit will package up our Node.js StrongLoop application and deploy it to the runtime collective.
+	> 
+	> We used the web UI in the previous few steps to publish the application. However, we could have also used the API Designer CLI to accomplish the same task.
 
-1. The terminal will prompt you when the publication is complete:
+1. Wait for the application publish process to complete:
+
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/publish-app-success.png)
+
+1. Close the Firefox browser by clicking the `x` on the tab or browser window.
+
+1. Return to the terminal editor. Stop the API Designer process:
+
+	```bash
+	control+c
+	```
+
+1. Notice that logs were generated during the application publishing process:
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab3/app-published.png)
 
