@@ -566,7 +566,7 @@ Using both the CLI and the API Designer, a lot of files have been created and up
 1. From the `Terminal Emulator`, type:
 
 	```bash
-	validate_lab 2
+	validate-lab 2
 	```
 	
 1. The script will execute a series `diff` commands against specific files in your project folder (`~/ThinkIBM/inventory`)
@@ -607,7 +607,7 @@ Using both the CLI and the API Designer, a lot of files have been created and up
 1. If you have differences in one or more of your files, the good news is they are easy to fix. Run the following command to merge the corrected changes into your source files:
 
 	```bash
-	merge_lab 2
+	merge-lab 2
 	```
 
 # Lab 2 - Conclusion

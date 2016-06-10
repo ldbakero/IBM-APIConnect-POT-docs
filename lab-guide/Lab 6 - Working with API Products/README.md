@@ -176,7 +176,7 @@ Using both the CLI and the API Designer, a lot of files have been created and up
 1. From the `Terminal Emulator`, type:
 
 	```bash
-	validate_lab 6
+	validate-lab 6
 	```
 	
 1. The script will execute a series `diff` commands against specific files in your project folder (`~/ThinkIBM/inventory`)
@@ -184,7 +184,7 @@ Using both the CLI and the API Designer, a lot of files have been created and up
 1. If the output of the `validate_lab` script includes discrepencies, you may merge the corrected changes into your source files by typing:
 
 	```bash
-	merge_lab 6
+	merge-lab 6
 	```
 	
 1. If a merge was necessary, you will also need to re-publish the API Product in order to update the API Connect server with the latest changes.

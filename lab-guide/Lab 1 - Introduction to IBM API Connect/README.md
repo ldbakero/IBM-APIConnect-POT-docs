@@ -30,7 +30,7 @@ For this lab, you will be using a VMWare image running Xubuntu that is pre-insta
 1. In the terminal, type:
 
 	```bash
-	update_pot all
+	update-pot -v 5010 -c patch -c labs
 	```
 	
 1. The update pulls down a clone of our git repo and moves the support files to the proper locations. The update will take a few minutes, please be patient while the update completes.
