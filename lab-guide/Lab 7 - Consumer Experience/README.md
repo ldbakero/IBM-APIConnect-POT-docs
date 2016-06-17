@@ -232,53 +232,23 @@ In this section, we will use the developer portal to test one of the think produ
   
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/PortalTryShippingOperationResultsSuccess.png)
 
-## 7.5 - Configure and Run a Consumer Application
+## 7.5 - Test the APIs from the Think IBM Web Consumer Application
 
-In this section, we will edit a config file for an implementation of the `Think IBM Web Consumer` application. The application is pre-configured to communicate with our API Connect environment and the API's which you just created.
+Now that you have browsed the API Portal and registered / tested the API's that **ThinkIBM** is providing, it's time to test them out from a real application. We have provided a sample consumer application which will be used to interract with the **ThinkIBM** API's.
 
-The application will handle the OAuth token exchange on our behalf, as well as provide the Client ID and Client Secret for all API calls so that they will pass entitlement validation.  
+1. The ThinkIBM Consumer Application is automatically set up to launch when you open the Chrome browser:
 
-1. Launch the `Sublime Text` editor window from the task bar if it is already open, or from the favorites menu as shown below:
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/launch-chrome.png)
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/launch-sublime-text.png)
+1. In order to set up the consumer app to use our registered client credentials, a setup screen will be displayed asking for some application configuration parameters.
 
-1. In the `Sublime Text` editor file tree menu, expand the `lab7 > consumer_app > config` folder and select the `default.json` file to edit the source.
+1. Using the Client ID and Client Secret values you saved earlier in the Notes application, copy/paste them into the `Client ID` and `Client Secret` fields as shown below:
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/open-default-json.png)
+	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/config-consumer-app.png)
 
-1. Using the Client ID and Client Secret values in the Notes application, copy/paste them into the `"client_id":""` and `"client_secret":""` values between the quotes in the `default.json` file as shown below:
+1. Leave the `API Connect Host`, `API Connect Org` and `API Connect Catalog` fields as-is. Click the `Submit` button.
 
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/EditOpenThinkIBMWebConsumerConfigFile.png)
-
-1. With the `default.json` tab in the Sublime Text editor window selected, choose  `File > Save` from the application menu.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SaveOpenThinkIBMWebConsumerConfigFile.png)
-
-1. Now we will open a fresh Terminal Emulator window so we can start the `Think IBM Web Consumer` application.
-
-  Click the favorites menu and select `Terminal Emulator` as shown below.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/launch-teminal-emulator.png)
-
-1. Navigate to the `/home/student/lab_files/lab7/consumer_app/` directory by entering the `cd` command as shown below:
-
-	```bash
-	cd ~/lab_files/lab7/consumer_app/
-	```
-                                                                                                                                                                                                                                                                                                                                                                                                                    
-1. Start the `Think IBM Web Consumer` application by entering the `npm start` command as shown below. The application is a **Node.js** application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-
-	```bash
-	npm start
-	```
-
-1. The `Think IBM Web Consumer` application launches in a browser window.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/think-consumer-home.png)
-
-## 7.6 - Test the APIs from the Think IBM Web Consumer Application
-
-1. Recall that in Lab 4 you secured the `inventory` API by requiring OAuth. If you attempt to view the Item Inventory before logging in, you will be challenged for a username and password. Either click on the `Browse Item Inventory` button, or the `Log In` link to open the login prompt.
+1. The home page is a simple landing page which does not invoke any of the API's. Recall that in Lab 4 you secured the `inventory` API by requiring OAuth. If you attempt to view the Item Inventory before logging in, you will be challenged for a username and password. Either click on the `Browse Item Inventory` button, or the `Log In` link to open the login prompt.
 
 1. Enter any Username and Password then click the `Log In` button. Our sample authentication service is a dummy repository that will accept any credentials provided.
 
