@@ -137,7 +137,7 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	> Flow: `Password`
 	
-	> Token URL: `https://api.think.ibm/sales/sb/oauth20/token`
+	> Token URL: `https://api.think.ibm/sales/sb/oauth2/token`
 
 1. Click the `+` icon in the **Scopes** section to create a new scope. Set the following properties:
 
