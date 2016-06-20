@@ -54,18 +54,6 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 1. API Connect will generate a new swagger definition file for the `financing` API and automatically load the API editor screen. Notice that the API does not contain any paths or data definitions. We will be adding these in the following steps.
 
-1. Click on `Host` from the API editor menu. Remove `$(catalog.host)` from the Host field. We will keep this blank.
-
-	> ![][troubleshooting]
-	> 
-	> The host field will show a red line indicating that the field is required. You may ignore this message.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_no_host.png)
-	
-	```
-	NOTES: LETS SEE IF THIS IS NECESSARY
-	```
-
 1. Click on `Base Path` menu option and set the base path to `/financing`.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_api_basepath.png)

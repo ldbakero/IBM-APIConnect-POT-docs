@@ -62,12 +62,6 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 	
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab4/newoauth-start.png)
 
-1. Navigate to the `Host` section of the API. Remove `$(catalog.host)` from the Host field, as we want to keep this blank.
-
-	```
-	NOTE:  LETS SEE IF THIS IS REQUIRED
-	```
-
 1. Navigate to the `OAuth 2` section.
 
 	Over the next several steps, we will set up OAuth-specific options, such as client type (public vs confidential), valid access token scopes, supported authorization grant types, etc. The [OAuth 2.0 Specification](http://tools.ietf.org/html/rfc6749) has detailed descriptions of each of the properties we are configuring here.
@@ -124,14 +118,6 @@ In this tutorial, you will secure the Inventory API to protect the resources exp
 1. Navigate to the `Base Path` section.
 
 	Change the base path from `/api` to `/inventory`.
-
-1. Navigate to the `Host` section of the API. **Remove** the `$(catalog.host)` value.
-
-	As with the OAuth API Provider we just created, we want this value to remain empty.
-	
-	```
-	NOTE: LETS SEE IF THIS IS NECESSARY
-	```
 
 1. Navigate to the `Security Definitions` section.
 
