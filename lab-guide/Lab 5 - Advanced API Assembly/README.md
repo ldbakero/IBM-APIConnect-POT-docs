@@ -50,8 +50,6 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_api_info.png)
 
-1. Keep the selected default to `Don't add to a product` and click the `Add` button.
-
 1. API Connect will generate a new swagger definition file for the `financing` API and automatically load the API editor screen. Notice that the API does not contain any paths or data definitions. We will be adding these in the following steps.
 
 1. Click on `Base Path` menu option and set the base path to `/financing`.
