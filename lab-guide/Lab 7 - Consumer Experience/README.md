@@ -256,7 +256,13 @@ Now that you have browsed the API Portal and registered / tested the API's that 
 
 	> ![][info]
 	> 
-	> The consumer app will contact our OAuth Token URL and handle the token exchange using standard OAuth proceedures. If you're interested in seeing the token, you can switch over to the terminal from where you launched the consumer app and view the logs. Look for a line similar to:
+	> The consumer app will contact our OAuth Token URL and handle the token exchange using standard OAuth proceedures. If you're interested in seeing the token, you can open a new terminal window and view the logs:
+
+	```bash
+	tail -n 50 /var/log/pot-consumer.log | grep Token
+	```
+
+	> You should see a line similar to:
 
 	```text
 	Using OAuth Token: AAEkZGEwZDgxNDMtMzIxMS00ZDgyLWE3MGYtMTJmY2UyYjk1YmUyxzqSMdEr7wM8XU_edO3dmxGDmC1ZGaqUC9Ibh-rOVNlflzd6blfDq4CGaNsD1qn-KESw6Q6RN_TPA0IfMdIn1nHY4ZpGRYa5N0f7mgY2Jg4Tfhm0IlhCUq5HRvoo7c4SIX7SAS3rL998_BvMVBST_g
