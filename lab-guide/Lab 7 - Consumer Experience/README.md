@@ -180,7 +180,7 @@ In this section, we will subscribe to a plan for the ThinkIBM APIs using the Thi
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SelectThinkIBMProduct.png)
 
-1. Click the `Plans` link on the left-hand navigation menu and then click the `Subscribe` button under the **Silver** plan as shown below.
+1. Scroll down to view the `Plans` and then click the `Subscribe` button under the **Silver** plan as shown below.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SubscribetoThinkSilverPlan.png)
 	
@@ -193,8 +193,6 @@ In this section, we will subscribe to a plan for the ThinkIBM APIs using the Thi
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/SubscribeThinkIBMWebApplicationtoPlan.png)
 
 1. The `Think IBM Web Consumer` Web application is now subscribed to the Silver plan for the `think` API product.
-
-	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab7/ThinkIBMWebApplicationSubscribed.png)
 
 1. Let's validate that we subscribed to the Silver plan for the `think v1.0.0` API product. Click the `Apps` link.
 

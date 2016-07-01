@@ -38,7 +38,7 @@ In this tutorial, you will expand the product offerings for **ThinkIBM**. In add
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab5/fin_add_new.png)
 
-1. Fill in the form values for the API, then click the `Next` button to continue.
+1. Fill in the form values for the API, then click the `Add` button to continue.
 
 	> Title: `financing`
 	

@@ -114,7 +114,7 @@ For this lab, you will be using a VMWare image running Xubuntu that is pre-insta
 	apic edit
 	```
 
-1. To test our notes services, click on the `run` button to open the application launcher.
+1. To test our notes services, click on the `run` button located at the bottom left corner of the window to open the application launcher.
 
 	![](https://github.com/ibm-apiconnect/pot-onprem-docs/raw/5010/lab-guide/img/lab1/run.png)
 	

@@ -17,7 +17,7 @@ In this lab, you will learn:
 ---
 # Lab 8	- Case Study Used in this Tutorial
 
-In this tutorial, you will simulate a good amount of traffic passing through the API Connect platform by executing a script that will invoke a series of `curl` commands that will hit a dummy API. Upon that script finishing, you will go into the API Manager and get some hands on experience with customizing a dashboard and viewing the analytics for traffic run on the system.
+In this tutorial, you will go into the API Manager and get some hands on experience with customizing a dashboard and viewing the analytics for traffic run on the system.
 
 ---
 # Lab 8	- Step by Step Lab Instructions

@@ -294,9 +294,9 @@ Using both the CLI and the API Designer, a lot of files have been created and up
 
 In this lab you learned:
 
-+ How to create a remote hook
-+ How to test the remote hook
-+ Publish App to Liberty Collective
++ How to modify the LoopBack application configuration
++ How to create a remote hook in a LoopBack application
++ Publish a LoopBack application to the APIC Collective
 
 Proceed to [Lab 4 - Configure and Secure an API](../Lab%204%20-%20Configure%20and%20Secure%20an%20API)
 

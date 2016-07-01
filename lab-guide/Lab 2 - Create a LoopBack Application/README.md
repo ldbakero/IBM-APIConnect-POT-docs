@@ -124,7 +124,7 @@ There are two parts to this. First is the definition of how to connect to the ba
 	? Enter the data-source name:  mysql-connection
 	? Select the connector for mysql-connection:
 		> MySQL (supported by StrongLoop)
-	? Connection String url to override other settings (eg: mysql://user:pass@host/db): <leave blank>
+	? Connection String url to override other settings: <leave blank>
 	? host:  mysql.think.ibm
 	? port:  3306
 	? user:  student
